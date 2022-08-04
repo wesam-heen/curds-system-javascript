@@ -1,0 +1,115 @@
+/* global rules */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #9b9b9b;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* end global rules */
+/* head */
+.cruds{
+    width: 80%;
+    margin: auto;
+
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+/* end head */
+/* start input */
+input{
+    width: 100%;
+    max-width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #d1d1d1;
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #333;
+    transition: 0.5s;
+}
+input:focus{
+    background-color: #e7e7e7;
+    transform: scale(1.1);
+    caret-color: #f34dc3;
+    border: 1px solid white;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1;
+    align-items: center;
+}
+.price input{
+   
+    width: 20%;
+}
+#total{
+    background-color: #f34dc3;
+    padding: 0px 30px;
+   line-height: 2.2;
+    border-radius: 40px;
+    height: 30px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #f34dc3;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #f34dc396;
+    letter-spacing: 1.2px;
+    transform: scale(0.99);
+}
+
+/* end input */
+/* start output */
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btnSearch button{
+    width: 45%;
+}
+#deleteAll{
+    margin: 20px 0px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+    border-width: 1px 5px 1px 5px;
+    border-color: white transparent white transparent;
+    border-style: solid;
+    
+}
+th,td{
+    padding: 5px;
+}
+
+table button{
+  font-size: 14px;
+  height: 40px;
+}
